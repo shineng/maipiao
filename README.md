@@ -1,16 +1,11 @@
-# maipiao
+# 买票APP
 
-A new Flutter project.
+这是一个 Flutter 开发的网上购票程序的示例代码，系列教程如下.
 
-## Getting Started
+# Flutter 实战指南
 
-This project is a starting point for a Flutter application.
+# [00 Flutter 的安装于配置](https://www.liuguodong.cn/2019/04/10/flutter-quick-start/)
+# [01 Genymotion 的安装](https://www.liuguodong.cn/2019/04/16/setup-genymotion/)
+# [02 使用VS Code开发Flutter应用，体验热重载技术](https://www.liuguodong.cn/2019/04/17/flutter-hot-reload/)
+# [03 重头创建第一个Flutter应用](https://www.liuguodong.cn/2019/04/17/first-flutter-app/)
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
