@@ -4,10 +4,11 @@ import 'TicketTab.dart';
 import 'UserTab.dart';
 import 'package:flutter/services.dart';
 import 'dart:io';
-
+import 'package:flutter/rendering.dart';
 // main是一个dart语言的函数，它是程序的执行入口
 // 在这里通过runApp来启动MyApp这个组件
 void main() {
+  //debugPaintSizeEnabled=true;
   runApp(MyApp());
   if (Platform.isAndroid) {
     SystemUiOverlayStyle systemUiOverlayStyle =

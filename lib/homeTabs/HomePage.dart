@@ -1,28 +1,25 @@
 import 'package:flutter/material.dart';
-// import 'package:flutter_swiper/flutter_swiper.dart';
+import 'RentBusTab.dart';
+import 'SchoolBusTab.dart';
+import 'BusTab.dart';
 
-import 'homeTabs/BusTab.dart';
-import 'homeTabs/SchoolBusTab.dart';
-import 'homeTabs/RentBusTab.dart';
-class HomeTab extends StatefulWidget {
-  @override
-  _HomeTabState createState() => _HomeTabState();
-}
-
- 
+class HomePage extends StatelessWidget {
+  final int len = 3;
+  final List<String> titles = ["科技", "汽车", "金融"];
 
   final TextStyle selected_style =
       new TextStyle(fontSize: 14.0, fontWeight: FontWeight.bold);
   final TextStyle unselected_style =
       new TextStyle(fontSize: 12.0, fontWeight: FontWeight.bold);
 
-class _HomeTabState extends State<HomeTab> {
+  final List<Tab> tabs = new List<Tab>();
+
   @override
   Widget build(BuildContext context) {
-
+    createTabs();
 
     return new DefaultTabController(
-        length: 3,
+        length: len,
         initialIndex: 0,
         child: new Column(
           children: <Widget>[
@@ -45,11 +42,7 @@ class _HomeTabState extends State<HomeTab> {
                       indicatorWeight: 2.0,
                       labelStyle: selected_style,
                       unselectedLabelStyle: unselected_style,
-                      tabs: <Widget>[
-                        Tab(text: "校园班车",),
-                        Tab(text: "客运班车",),
-                        Tab(text: "定制班车",),
-                      ],)),
+                      tabs: tabs)),
             ),
             new Expanded(
                 child: TabBarView(
@@ -59,6 +52,11 @@ class _HomeTabState extends State<HomeTab> {
         ));
   }
 
-
- 
+  void createTabs() {
+    for (int i = 0; i < len; i++) {
+      tabs.add(new Tab(
+        text: titles[i],
+      ));
+    }
+  }
 }
